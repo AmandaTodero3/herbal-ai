@@ -12,16 +12,20 @@
       content="Herbal Recipe AI, Herbal Apothecare Academy, Natural Remedies, Herbal Recipes, Health"
     />
     <meta name="author" content="Amanda Todero" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Herbal Recipe AI</title>
   </head>
   <body>
+    <div class="container">
     <header>
        <h1>Herbal Apothecare AI Assissant </h1>
-       <p>Hi there! What herb(s) would you like a recipe for?</p>
+       <p class="question">Hi there! What herb(s) would you like a recipe for?</p>
         </header>
       <main>
         <div class="form-container">
-          <form id="herbal-ai-form">
+          <form id="recipe-generator-form">
             <input
               type="text"
               placeholder="Enter herb(s) here"
@@ -34,7 +38,7 @@
             <input type="submit" class="submit-button" />
           </form>
         </div>
-        
+        <div class="recipe hidden" id="recipe"></div>
       </main>
       <footer>
         This AI project was coded by
