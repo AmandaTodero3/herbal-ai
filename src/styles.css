@@ -1,10 +1,12 @@
 body {
-    background-color: #d9f5d8;
+    background-image: url("Herb 3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
-    color: green;
+    color: white;
 }
 
 .container {
@@ -21,11 +23,22 @@ h1 {
     font-weight: 800;
     font-size: 36px;
     line-height: 1.5;
-    color: green;
+    color: rgb(47, 91, 47);
+}
+
+.instructions-container {
+    background-color: rgba(48, 68, 57, 0.5);
+    color: white;
+    padding: 20px;
+    display: inline-block;
+}
+
+small {
+    opacity:  0.6;
 }
 
 .form-container {
-    background-color: white;
+    background-color:rgba(48, 68, 57, 0.5);
     box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
     border-radius: 10px;
     margin-bottom: 30px;
@@ -46,7 +59,7 @@ form {
 
 .prompt {
     padding: 16px;
-    border: 1px solid greenyellow;
+    border: 1px solid rgb(26, 51, 35);
     width: 80%;
     font-size: 16px;
     border-radius: 50px;
@@ -55,8 +68,8 @@ form {
 
 .submit-button {
     margin-left: 10px;
-    background-color: #d9f5d8;
-    color: green;
+    background-color: rgb(26, 51, 35);
+    color: white;
     width: 150px;
     font-size: 16px;
     border: none;
@@ -69,12 +82,10 @@ form {
 
 }
 
-.recipe {
+#recipe {
+    color: white;
     font-size: 16px;
-    background-color: white;
-    padding: 20px;
-    line-height: 2;
-    border-left: 3px solid greenyellow;
+    line-height: 1.5;
     box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
 }
 
@@ -87,8 +98,8 @@ footer {
     font-size: 13px;
     margin-top: 30px;
 }
-
 .spin {
+    color: white;
     display: inline-block;
     animation: spin 2s linear infinite;
 }

@@ -19,10 +19,18 @@
   </head>
   <body>
     <div class="container">
-    <header>
-       <h1>Herbal Apothecare AI Assissant </h1>
-       <p class="question">Hi there! What herb(s) would you like a recipe for?</p>
-        </header>
+      <header>
+        <h1>Herbal Apothecare AI Assissant</h1>
+        <div class="instructions-container">
+          <p class="question" style="font-weight: bold">
+            Hi there! What herb(s) would you like a recipe for?
+          </p>
+          <small style="font-weight: bold"
+            >You may also enter type of recipe needed (tincture, tea, syrup
+            etc.)</small
+          >
+        </div>
+      </header>
       <main>
         <div class="form-container">
           <form id="recipe-generator-form">
@@ -37,8 +45,8 @@
             />
             <input type="submit" class="submit-button" />
           </form>
+          <p id="recipe"></p>
         </div>
-        
       </main>
       <footer>
         This AI project was coded by
@@ -54,7 +62,5 @@
     </div>
 
     <script src="src/index.js"></script>
-  </body>
-</html>
   </body>
 </html>
